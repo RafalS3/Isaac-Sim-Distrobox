@@ -53,11 +53,11 @@ run_isaac
 ##  Memory Problems
 Isaac Sim is extremely memory-intensive. If the simulator crashes silently or disappears during loading, you likely ran out of RAM.
 You can fix it a bit using: 
-**Option A: Use ZRAM**
+# **Option A: Use ZRAM**
 Use compressed RAM for better performance.
 See **[Arch Wiki: Zram](https://wiki.archlinux.org/title/Zram)**.
 
-**Option B: Temporary Swap File**
+# **Option B: Temporary Swap File**
 Alternatively, create a 16GB "safety net" on your disk:
 ```bash
 sudo fallocate -l 16G /swapfile
