@@ -13,8 +13,8 @@ if [[ $ros_distro != "humble" ]]; then
 fi
 
 script_dir="$(cd "$(dirname "$0")" && pwd)"
-
-distrobox_home="$HOME/.distrobox_$container_name"
+ws_dir="$(cd "$script_dir/.." && pwd)"
+distrobox_home="$ws_dir/.distrobox"
 
 # --- PRE-CHECKS ---
 
